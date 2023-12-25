@@ -15,6 +15,6 @@ class GreetingHandler {
     ): Mono<ServerResponse> {
         return ServerResponse.ok()
             .contentType(MediaType.APPLICATION_JSON)
-            .body(BodyInserters.fromValue(Greeting("hello, world!")))
+            .body(BodyInserters.fromValue(Greeting("hello, world!", "English")))
     }
 }
