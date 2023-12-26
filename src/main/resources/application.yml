@@ -1,5 +1,5 @@
 spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/cat-site
-    username: root
-    password: root
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/cat-site
+    username: cat-user
+    password: cat-pass
