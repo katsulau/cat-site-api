@@ -23,6 +23,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-webflux:3.2.1")
     implementation("io.projectreactor:reactor-core:3.6.1")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
+    implementation("org.postgresql:r2dbc-postgresql:1.0.3.RELEASE")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.projectreactor:reactor-test")
 }
