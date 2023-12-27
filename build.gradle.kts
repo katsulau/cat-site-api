@@ -25,7 +25,10 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     // r2dbc driver
     implementation("org.postgresql:r2dbc-postgresql:1.0.3.RELEASE")
+
+    // spring starter dataがないとliquibaseのmigration実行がされない
     implementation("org.springframework.boot:spring-boot-starter-data-r2dbc:3.2.1")
+//    implementation("org.springframework.boot:spring-boot-starter-data-jdbc:3.2.1")
 
     // jdbc postgresql driver
     // this is required because liquibase does not support r2dbc driver
