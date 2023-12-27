@@ -26,7 +26,7 @@ dependencies {
     // r2dbc driver
     implementation("org.postgresql:r2dbc-postgresql:1.0.3.RELEASE")
 
-    // spring starter dataがないとliquibaseのmigration実行がされない
+    // spring starter dataがないとliquibaseのmigration実行がされない。多分何かの依存しているものが必要とされるもの
     implementation("org.springframework.boot:spring-boot-starter-data-r2dbc:3.2.1")
 //    implementation("org.springframework.boot:spring-boot-starter-data-jdbc:3.2.1")
 
