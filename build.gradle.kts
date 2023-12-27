@@ -23,7 +23,17 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-webflux:3.2.1")
     implementation("io.projectreactor:reactor-core:3.6.1")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
+    // r2dbc driver
     implementation("org.postgresql:r2dbc-postgresql:1.0.3.RELEASE")
+    implementation("org.springframework.boot:spring-boot-starter-data-r2dbc:3.2.1")
+
+    // jdbc postgresql driver
+    // this is required because liquibase does not support r2dbc driver
+    implementation("org.postgresql:postgresql:42.7.1")
+
+    // migration tool
+    implementation("org.liquibase:liquibase-core:4.25.1")
+
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.projectreactor:reactor-test")
 }
